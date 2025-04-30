@@ -1,0 +1,26 @@
+.hero-card__rating {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars {
+  display: inline-block;
+}
+
+.star {
+  font-size: 32px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star:hover,
+.star:hover ~ .star {
+}

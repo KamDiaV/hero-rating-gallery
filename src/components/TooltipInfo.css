@@ -1,0 +1,35 @@
+.hero-card__tooltip {
+  margin-left: 8px;
+}
+
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.tooltip-content {
+  display: none;               
+  position: absolute;
+  top: 0;               
+  right: 100%;
+  margin-bottom: 8px;
+  max-width: 240px;           
+  max-height: 240px;           
+  padding: 10px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: auto;             
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  white-space: normal;         
+}
+
+.info-tooltip:hover .tooltip-content {
+  display: block;
+}
