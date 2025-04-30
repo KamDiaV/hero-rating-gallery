@@ -27,7 +27,7 @@
 
 ## 🛠 Технологии
 
-- React  
+- React (функциональные компоненты, хуки useState/useEffect) 
 - Create React App  
 - CSS (Flexbox, object-fit)  
 - localStorage (Web Storage API)
