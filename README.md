@@ -29,5 +29,5 @@
 
 - React (функциональные компоненты, хуки useState/useEffect) 
 - Create React App  
-- CSS (Flexbox, object-fit)  
+- CSS (Flexbox)  
 - localStorage (Web Storage API)
