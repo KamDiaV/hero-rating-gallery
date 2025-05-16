@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import heroes from './heroes';
+import HeroList from '../src/components/HeroList.jsx';
 import HeroCard from '../src/components/HeroCard.jsx';
 
 function App() {
   return (
-    <div className="gallery">
-      {heroes.map(h => <HeroCard key={h.name} hero={h} />)}
-    </div>
+    <HeroList
+      items={heroes}
+      renderItem={h => <HeroCard hero={h} />}
+      keyExtractor={h => h.name}
+      className="gallery"
+    />
   );
 }
 

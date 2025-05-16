@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { formatHeroStats } from '../utils/heroUtils';
 import TooltipInfo from './TooltipInfo';
 import HeroStats from './HeroStats';
 import StarRating from './StarRating';
@@ -7,13 +8,7 @@ export default function HeroCard({ hero }) {
   const { name, url, info } = hero;
   const storageKey = `rating-${name}`;
 
-  const stats = [
-    { label: 'Вселенная', value: hero.universe },
-    { label: 'Альтер эго', value: hero.alterego },
-    { label: 'Род деятельности', value: hero.occupation },
-    { label: 'Друзья', value: hero.friends },
-    { label: 'Суперсилы', value: hero.superpowers },
-  ];
+  const stats = formatHeroStats(hero);
 
   const [rating, setRating] = useState(0);
 
